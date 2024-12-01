@@ -1,15 +1,1 @@
-import "https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js";
-
-// Initialization
-const cloudFunctionURL = "https://us-central1-guiruggiero.cloudfunctions.net/guipt";
-
-// Call GuiPT
-export async function callGuiPT(chatHistory, userMessage) {
-    // eslint-disable-next-line no-undef
-    return await axios.post(cloudFunctionURL, null, {
-        params: {
-            history: chatHistory,
-            prompt: userMessage
-        }
-    });
-}
+import"https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js";const cloudFunctionURL="https://us-central1-guiruggiero.cloudfunctions.net/guipt";export async function callGuiPT(t,n){return await axios.post(cloudFunctionURL,null,{params:{history:t,prompt:n}})}
